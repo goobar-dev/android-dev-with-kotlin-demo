@@ -22,12 +22,7 @@ class JokeScreenViewModel @Inject constructor(private val service: JokeService) 
   }
 
   fun refresh() {
-    _state.getAndUpdate { it.copy(isLoading = true) }
-
-    viewModelScope.launch(Dispatchers.IO) {
-      val joke = service.getJoke()
-      _state.getAndUpdate { it.copy(isLoading = false, setup = joke.setup, punchline = joke.punchline) }
-    }
+    TODO("Implement joke refresh")
   }
 
   data class UiState(

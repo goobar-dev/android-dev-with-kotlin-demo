@@ -78,21 +78,5 @@ fun JokeScreen(
 
 @Composable
 private fun JokeScreenContent(state: UiState, modifier: Modifier = Modifier) {
-  Column(modifier = Modifier
-    .padding(horizontal = 20.dp)
-    .then(modifier)) {
-    Text(
-      text = state.setup,
-      modifier = Modifier
-        .fillMaxWidth(1f)
-        .placeholder(state.isLoading)
-    )
-    Spacer(modifier = Modifier.size(24.dp))
-    Text(
-      text = state.punchline,
-      modifier = Modifier
-        .fillMaxWidth(1f)
-        .placeholder(state.isLoading)
-    )
-  }
+  Text("Joke content here")
 }

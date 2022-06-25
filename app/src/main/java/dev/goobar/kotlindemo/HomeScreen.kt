@@ -19,8 +19,6 @@ fun HomeScreen(navController: NavController) {
     modifier = Modifier.fillMaxSize(1f),
     contentAlignment = Alignment.Center
   ) {
-    Button(onClick = { navController.navigate(Destination.JOKE.name) }) {
-      Text(text = "Get Joke", style = MaterialTheme.typography.bodyMedium)
-    }
+    Text("Home content here")
   }
 }
